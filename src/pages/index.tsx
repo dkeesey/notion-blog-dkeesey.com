@@ -1,6 +1,6 @@
 import Header from '../components/header'
 import ExtLink from '../components/ext-link'
-import Features from '../components/features'
+// import Features from '../components/features'
 import sharedStyles from '../styles/shared.module.css'
 
 export default function Index() {
@@ -14,19 +14,10 @@ export default function Index() {
           width="250"
           alt="Vercel + Notion"
         />
-        <h1>My Notion Blog</h1>
-        <h2>
-          Blazing Fast Notion Blog with Next.js'{' '}
-          <ExtLink
-            href="https://github.com/vercel/next.js/issues/9524"
-            className="dotted"
-            style={{ color: 'inherit' }}
-          >
-            SSG
-          </ExtLink>
-        </h2>
+        <h1>Dean's Notion Blog</h1>
+        <h2>Presenting choice nuggets of code and UI</h2>
 
-        <Features />
+        {/* <Features /> */}
 
         <div className="explanation">
           <p>
