@@ -10,48 +10,53 @@ export default function Index() {
     <>
       <Header titlePre="Home" />
       <div className={sharedStyles.layout}>
-        <img
-          src="/vercel-and-notion.png"
-          height="85"
-          width="250"
-          alt="Vercel + Notion"
-        />
-        <h1>Dean's Notion Blog</h1>
-        <h2>Presenting choice nuggets of code and UI</h2>
+        <h1>Dean A. Keesey</h1>
+        <h2>
+          Full-stack JavaScript & UI Engineer |<br />
+          AWS Solutions Architect Associate
+        </h2>
 
         {/* <Features /> */}
 
         <div className="explanation">
           <p>
-            This is a statically generated{' '}
-            <ExtLink href="https://nextjs.org">Next.js</ExtLink> site with a{' '}
-            <ExtLink href="https://notion.so">Notion</ExtLink> powered blog that
-            is deployed with <ExtLink href="https://vercel.com">Vercel</ExtLink>
-            . It leverages some upcoming features in Next.js like{' '}
-            <ExtLink href="https://github.com/vercel/next.js/issues/9524">
-              SSG support
-            </ExtLink>{' '}
-            and{' '}
-            <ExtLink href="https://github.com/vercel/next.js/issues/8626">
-              built-in CSS support
-            </ExtLink>{' '}
-            which allow us to achieve all of the benefits listed above including
-            blazing fast speeds, great local editing experience, and always
-            being available!
+            Welcome! I'm Dean, a seasoned engineer with 15+ years of experience
+            delivering web and application design, driving digital
+            transformations for Fortune 500 corporations and non-profit
+            organizations alike.
           </p>
-
           <p>
-            Get started by creating a new page in Notion and clicking the deploy
-            button below. After you supply your token and the blog index id (the
-            page's id in Notion) we will automatically create the table for you!
-            See{' '}
-            <ExtLink href="https://github.com/ijjk/notion-blog#getting-blog-index-and-token">
-              here in the readme
-            </ExtLink>{' '}
-            for finding the new page's id. To get your token from Notion, login
-            and look for a cookie under www.notion.so with the name `token_v2`.
-            After finding your token and your blog's page id you should be good
-            to go!
+            [Hero Image Suggestion: A high-resolution, professional photo of
+            yourself. An alternative could be an image that represents your work
+            – abstract code lines or an engaging UI design.]
+          </p>
+          <p>
+            Through leveraging my vast UI/UX engineering expertise and a
+            certification in cloud engineering as an AWS Solutions Architect
+            Associate, I create innovative, user-friendly digital experiences
+            that enhance customer experience across all touchpoints.
+          </p>
+          <p>
+            In my diverse career, I've founded and developed the Masumi Hayashi
+            Foundation, worked on large-scale client websites at Agency.com, and
+            delivered complex licensing contracts at Oracle Corporation. I've
+            also designed 3D motion graphics for ESPN's international coverage
+            and resolved critical defects in e-commerce applications.
+          </p>
+          <p>
+            [Image Suggestions: Images/logos from the Masumi Hayashi Foundation,
+            Agency.com, Oracle Corporation, and ESPN.] Animation Suggestions:
+            Animate the introduction of the list of your experiences, each one
+            fading in sequentially. Another idea could be to have a 'typewriter'
+            animation for the introductory text.
+          </p>
+          <p>
+            Explore my blog to read more about my thoughts on technology,
+            innovation, and the intersection of art and tech. [Image Suggestion:
+            A teaser image or excerpt from your most recent blog post.] Looking
+            for a proven engineer to help deliver your next project? Let's get
+            in touch! [Button: 'Contact Me' with a link to your contact page or
+            email.]
           </p>
         </div>
       </div>

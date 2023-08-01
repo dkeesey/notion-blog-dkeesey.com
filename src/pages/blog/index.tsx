@@ -17,6 +17,7 @@ export async function getStaticProps({ preview }) {
   const postsTable = await getBlogIndex()
 
   const authorsToGet: Set<string> = new Set()
+
   const posts: any[] = Object.keys(postsTable)
     .map((slug) => {
       const post = postsTable[slug]
@@ -25,6 +26,7 @@ export async function getStaticProps({ preview }) {
         return null
       }
       post.Authors = post.Authors || []
+      console.log(post.Authors)
       for (const author of post.Authors) {
         authorsToGet.add(author)
       }
@@ -63,7 +65,7 @@ const Index = ({ posts = [], preview }) => {
         </div>
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <h1>My Notion Blog</h1>
+        <h1>Last Mover Advantage</h1>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
