@@ -33,9 +33,10 @@ export default function Index() {
         /> */}
 
         <div className="explanation">
+          <h3>Welcome! 👋 </h3>
           <p>
-            Welcome! I'm Dean Keesey, a seasoned engineer with 15+ years of
-            experience delivering web and application design, driving digital
+            I'm Dean Keesey, a seasoned engineer with 15+ years of experience
+            delivering web and application design, driving digital
             transformations for Fortune 500 corporations and non-profit
             organizations alike.
           </p>
