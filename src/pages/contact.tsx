@@ -1,5 +1,10 @@
+import React, { useEffect } from 'react'
+import Head from 'next/head'
 import Header from '../components/header'
 import ExtLink from '../components/ext-link'
+import Image from 'next/image'
+import profilePic from '../../public/dk.jpg'
+import styles from './Home.module.css'
 
 import sharedStyles from '../styles/shared.module.css'
 import contactStyles from '../styles/contact.module.css'
@@ -9,44 +14,89 @@ import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
+declare global {
+  interface Window {
+    hbspt: any
+  }
+}
+
 const contacts = [
   {
     Comp: Twitter,
     alt: 'twitter icon',
-    link: 'https://twitter.com/_ijjk',
+    link: 'https://twitter.com/dkeesey',
   },
   {
     Comp: GitHub,
     alt: 'github icon',
-    link: 'https://github.com/ijjk',
+    link: 'https://github.com/dkeesey',
   },
   {
     Comp: LinkedIn,
     alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/jj-kasper-0b5392166/',
-  },
-  {
-    Comp: Envelope,
-    alt: 'envelope icon',
-    link: 'mailto:jj@jjsweb.site?subject=Notion Blog',
+    link: 'https://www.linkedin.com/in/dean-keesey/',
   },
 ]
 
 export default function Contact() {
+  useEffect(() => {
+    if (window.hbspt) {
+      window.hbspt.forms.create({
+        region: 'na1',
+        portalId: '42523634',
+        formId: '43ddda4b-76ec-4cae-b395-d9586b6a9fe0',
+        target: '#hubspot-form',
+      })
+    } else {
+      const script = document.createElement('script')
+      script.src = '//js.hsforms.net/forms/embed/v2.js'
+      document.body.appendChild(script)
+      script.addEventListener('load', () => {
+        window.hbspt.forms.create({
+          region: 'na1',
+          portalId: '42523634',
+          formId: '43ddda4b-76ec-4cae-b395-d9586b6a9fe0',
+          target: '#hubspot-form',
+        })
+      })
+    }
+  }, [])
+
   return (
-    <>
+    <div>
+      <Head>
+        <title>Contact – Dean A. Keesey</title>
+        <script
+          id="hs-script-loader"
+          async
+          defer
+          src="//js.hsforms.net/forms/embed/v2.js"
+          onLoad={() => {
+            if (window.hbspt) {
+              window.hbspt.forms.create({
+                region: 'na1',
+                portalId: '42523634',
+                formId: '43ddda4b-76ec-4cae-b395-d9586b6a9fe0',
+              })
+            }
+          }}
+        />
+      </Head>
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
-        <div className={contactStyles.avatar}>
-          <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
+        <div className={styles.profilePicWrapper}>
+          <Image
+            className={styles.profilePic}
+            src={profilePic}
+            alt="Picture of Dean A. Keesey, UI Engineer"
+            width={300}
+            height={300}
+          />
         </div>
 
-        <h1 style={{ marginTop: 0 }}>Contact</h1>
+        <h1 style={{ marginTop: '2rem' }}>Contact Me</h1>
 
-        <div className={contactStyles.name}>
-          JJ Kasper - Next.js Engineer @{' '}
-          <ExtLink href="https://vercel.com">Vercel</ExtLink>
-        </div>
+        <div className={contactStyles.name}>Dean A Keesey</div>
 
         <div className={contactStyles.links}>
           {contacts.map(({ Comp, link, alt }) => {
@@ -57,7 +107,8 @@ export default function Contact() {
             )
           })}
         </div>
+        <div className={contactStyles.avatar} id="hubspot-form"></div>
       </div>
-    </>
+    </div>
   )
 }

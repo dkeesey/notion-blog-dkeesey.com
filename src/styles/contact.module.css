@@ -20,7 +20,8 @@
 .avatar {
   display: block;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  max-width: 50vw;
 }
 
 .avatar img {
@@ -33,4 +34,7 @@
 
 .name a {
   color: inherit;
+}
+.sproket {
+  display: none;
 }

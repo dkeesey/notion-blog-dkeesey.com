@@ -7,9 +7,8 @@ import styles from '../styles/header.module.css'
 const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Home', page: '/' },
   { label: 'Blog', page: '/blog' },
+  { label: 'Contact', page: '/contact' },
 ]
-
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
@@ -17,13 +16,12 @@ const Header = ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} Dean's Notion Blog</title>
+        <title>{titlePre ? `${titlePre} |` : ''} DeanKeesey.com</title>
         <meta
           name="description"
-          content="Dean's blog powered by Notion and Next.js"
+          content="Personal/Professional website and blog of Dean A Keesey"
         />
-        <meta name="og:title" content="DeanKeesey.com Notion Blog" />
-        <meta property="og:image" content={ogImageUrl} />
+        <meta name="og:title" content="DeanKeesey.com" />
       </Head>
       <ul>
         {navItems.map(({ label, page, link }) => (
