@@ -9,3 +9,10 @@
 .layout h2 {
   text-align: center;
 }
+.profile-pic {
+  border-radius: 9999px;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}

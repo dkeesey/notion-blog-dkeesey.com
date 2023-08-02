@@ -1,0 +1,10 @@
+/* Home.module.css */
+.profilePic {
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+.profilePicWrapper {
+  display: flex;
+  justify-content: center;
+}
