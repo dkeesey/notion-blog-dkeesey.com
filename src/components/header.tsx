@@ -27,7 +27,7 @@ const Header = ({ titlePre = '' }) => {
         {navItems.map(({ label, page, link }) => (
           <li key={label}>
             {page ? (
-              <Link href={page}>
+              <Link legacyBehavior href={page}>
                 <a className={pathname === page ? 'active' : undefined}>
                   {label}
                 </a>

@@ -34,7 +34,7 @@ function mapToEntry(post) {
     <entry>
       <id>${post.link}</id>
       <title>${decode(post.title)}</title>
-      <link href="${post.link}"/>
+      <Link legacyBehavior href="${post.link}"/>
       <updated>${new Date(post.date).toJSON()}</updated>
       <content type="xhtml">
         <div xmlns="http://www.w3.org/1999/xhtml">
@@ -65,8 +65,8 @@ function createRSS(blogPosts = []) {
   <feed xmlns="http://www.w3.org/2005/Atom">
     <title>My Blog</title>
     <subtitle>Blog</subtitle>
-    <link href="/atom" rel="self" type="application/rss+xml"/>
-    <link href="/" />
+    <Link legacyBehavior href="/atom" rel="self" type="application/rss+xml"/>
+    <Link legacyBehavior href="/" />
     <updated>${NOW}</updated>
     <id>My Notion Blog</id>${postsString}
   </feed>`
