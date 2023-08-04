@@ -1,3 +1,4 @@
 .nav {
-  background: linear-gradient(to right, lightblue, purple);
+  background: linear-gradient(to right, lightblue, blue); /* updated gradient colors */
+  height: 80%; /* 20% smaller height */
 }
