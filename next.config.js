@@ -57,4 +57,20 @@ module.exports = {
     }
     return cfg
   },
+  async rewrites() {
+    return [
+      {
+        source: '/index.html',
+        destination: '/index.html',
+      },
+      {
+        source: '/style.css',
+        destination: '/style.css',
+      },
+      {
+        source: '/script.js',
+        destination: '/script.js',
+      },
+    ]
+  },
 }
