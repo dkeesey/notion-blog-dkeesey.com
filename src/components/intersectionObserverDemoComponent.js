@@ -23,7 +23,7 @@ const IntersectionObserverDemoComponent = () => {
   }, [])
 
   return (
-    <iframe src="intersectionObserver/index.html" width="600" height="400" />
+    <iframe src="intersectionObserver/index.html" width="1200" height="800" />
   )
 }
 
