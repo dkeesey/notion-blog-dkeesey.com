@@ -7,6 +7,11 @@ body {
   color: #fff;
   padding: 0 2em;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 section {
@@ -22,6 +27,7 @@ section {
   transform: translateX(-100%);
   transition: all 1s;
   transition-delay: 500ms;
+  transition-delay: 2;
 }
 
 .show {

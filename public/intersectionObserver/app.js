@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('show')
     }
   }),
-    { threshold: 0.75 }
+    { threshold: 4 }
 })
 
 const hiddenElements = document.querySelectorAll('.hidden')
