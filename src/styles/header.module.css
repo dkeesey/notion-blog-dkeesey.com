@@ -4,6 +4,7 @@
   padding: 2em 0 0.5em;
   text-align: center;
   letter-spacing: -0.02em;
+  background: linear-gradient(to right, lightblue, purple);
 }
 
 .header ul {
