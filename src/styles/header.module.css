@@ -1,10 +1,10 @@
 .header {
   display: block;
-  min-height: 51.2px; /* 20% smaller height */
+  min-height: 2rem; /* Updated min-height */
   padding: 2em 0 0.5em;
   text-align: center;
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, lightblue, blue); /* updated gradient colors */
+  background: linear-gradient(to right, #f0f5ff, lightblue); /* Updated gradient colors */
 }
 
 .header ul {
