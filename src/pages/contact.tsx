@@ -2,16 +2,13 @@ import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Header from '../components/header'
 import ExtLink from '../components/ext-link'
-import Image from 'next/image'
-import profilePic from '../../public/dk.jpg'
-import styles from './Home.module.css'
+import ProfilePic from '../components/ProfilePic'
 
 import sharedStyles from '../styles/shared.module.css'
 import contactStyles from '../styles/contact.module.css'
 
 import GitHub from '../components/svgs/github'
 import Twitter from '../components/svgs/twitter'
-import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 
 declare global {
@@ -84,15 +81,7 @@ export default function Contact() {
       </Head>
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
-        <div className={styles.profilePicWrapper}>
-          <Image
-            className={styles.profilePic}
-            src={profilePic}
-            alt="Picture of Dean A. Keesey, UI Engineer"
-            width={300}
-            height={300}
-          />
-        </div>
+        <ProfilePic />
 
         <h1 style={{ marginTop: '2rem' }}>Contact Me</h1>
 

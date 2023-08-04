@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import Header from '../../components/header'
-import Image from 'next/image'
-import profilePic from '../../../public/dk.jpg'
-import styles from '../Home.module.css'
+import ProfilePic from '../../components/ProfilePic'
 import blogStyles from '../../styles/blog.module.css'
 import sharedStyles from '../../styles/shared.module.css'
 
@@ -55,15 +53,7 @@ const Index = ({ posts = [], preview }) => {
   return (
     <>
       <Header titlePre="Blog" />
-      <div className={styles.profilePicWrapper}>
-        <Image
-          className={styles.profilePic}
-          src={profilePic}
-          alt="Picture of Dean A. Keesey, UI Engineer"
-          width={300}
-          height={300}
-        />
-      </div>
+      <ProfilePic />
       {preview && (
         <div className={blogStyles.previewAlertContainer}>
           <div className={blogStyles.previewAlert}>
