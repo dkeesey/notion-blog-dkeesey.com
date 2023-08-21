@@ -22,6 +22,11 @@ type Post = {
   content: any[]
   hasTweet: boolean
 }
+interface BookmarkFormat {
+  bookmark_icon: string
+  bookmark_cover: string
+  // Add more properties if necessary
+}
 
 type RenderPostProps = {
   post: {
@@ -270,7 +275,17 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
             )
           }
 
-          const renderBookmark = ({ link, title, description, format }) => {
+          const renderBookmark = ({
+            link,
+            title,
+            description,
+            format,
+          }: {
+            link: string
+            title: string
+            description: string
+            format: BookmarkFormat
+          }) => {
             const { bookmark_icon: icon, bookmark_cover: cover } = format
             toRender.push(
               <div className={blogStyles.bookmark}>
@@ -295,6 +310,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
                           </div>
                           <div className={blogStyles.bookmarkLinkWrapper}>
                             <img
+                              alt="bookmark link icon"
                               src={icon}
                               className={blogStyles.bookmarkLinkIcon}
                             />
@@ -307,6 +323,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
                           <div className={blogStyles.bookmarkCoverWrapper2}>
                             <div className={blogStyles.bookmarkCoverWrapper3}>
                               <img
+                                alt="bookmark cover"
                                 src={cover}
                                 className={blogStyles.bookmarkCover}
                               />
