@@ -16,7 +16,10 @@ const Header = ({ titlePre = '' }) => {
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} DeanKeesey.com</title>
+        <title>
+          {titlePre ? `${titlePre} | DeanKeesey.com` : 'DeanKeesey.com'}
+        </title>
+
         <meta
           name="description"
           content="Personal/Professional website and blog of Dean A Keesey"
