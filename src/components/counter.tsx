@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 type CounterProps = {
   initialValue: number
+  children: React.ReactNode
 }
 
 const Counter: React.FC<CounterProps> = ({ initialValue }) => {

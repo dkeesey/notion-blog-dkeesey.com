@@ -260,7 +260,9 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
             listTagName = null
           }
 
-          const renderHeading = (Type: string | React.ComponentType) => {
+          const renderHeading = (
+            Type: React.ComponentType<{ children: React.ReactNode }>
+          ) => {
             toRender.push(
               <Heading key={id}>
                 <Type key={id}>{textBlock(properties.title, true, id)}</Type>
