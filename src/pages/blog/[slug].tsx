@@ -12,9 +12,36 @@ import React, { CSSProperties, useEffect } from 'react'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
 import getNotionUsers from '../../lib/notion/getNotionUsers'
 import { getBlogLink, getDateStr } from '../../lib/blog-helpers'
+import { GetStaticPropsContext } from 'next'
+
+type Post = {
+  Page: string
+  Authors: string[]
+  Date: string
+  Slug: string // Add Slug property to the type
+  content: any[]
+  hasTweet: boolean
+}
+
+type RenderPostProps = {
+  post: {
+    Page: string
+    Authors: string[]
+    Date: string
+    content: any[] // Update with appropriate type
+    hasTweet: boolean
+    // Add other properties as needed
+  }
+  redirect: string | null
+  preview: boolean
+}
 
 // Get the data for each blog post
-export async function getStaticProps({ params: { slug }, preview }) {
+export async function getStaticProps({
+  params,
+  preview,
+}: GetStaticPropsContext) {
+  const slug = params?.slug as string // Assuming slug is a string
   // load the postsTable so that we can get the page's ID
   const postsTable = await getBlogIndex()
   const post = postsTable[slug]
@@ -47,7 +74,7 @@ export async function getStaticProps({ params: { slug }, preview }) {
         const res = await fetch(
           `https://api.twitter.com/1/statuses/oembed.json?id=${tweetId}`
         )
-        const json = await res.json()
+        const json = (await res.json()) as any
         properties.html = json.html.split('<script')[0]
         post.hasTweet = true
       } catch (_) {
@@ -84,7 +111,7 @@ export async function getStaticPaths() {
 
 const listTypes = new Set(['bulleted_list', 'numbered_list'])
 
-const RenderPost = ({ post, redirect, preview }) => {
+const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
   const router = useRouter()
 
   let listTagName: string | null = null
@@ -109,7 +136,8 @@ const RenderPost = ({ post, redirect, preview }) => {
         const script = document.createElement('script')
         script.async = true
         script.src = twitterSrc
-        document.querySelector('body').appendChild(script)
+        const body = document.querySelector('body')
+        if (body) body.appendChild(script)
       }
     }
   }, [])
@@ -202,7 +230,12 @@ const RenderPost = ({ post, redirect, preview }) => {
                 Object.keys(listMap).map((itemId) => {
                   if (listMap[itemId].isNested) return null
 
-                  const createEl = (item) =>
+                  const createEl = (item: {
+                    key: string
+                    isNested?: boolean
+                    nested: string[]
+                    children: React.ReactFragment
+                  }): React.ReactElement | null =>
                     React.createElement(
                       components.li || 'ul',
                       { key: item.key },
