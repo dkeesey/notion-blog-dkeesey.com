@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import ExtLink from './ext-link'
@@ -30,11 +31,10 @@ const Header = ({ titlePre = '' }) => {
         {navItems.map(({ label, page, link }) => (
           <li key={label}>
             {page ? (
-              <Link
-                href={page}
-                className={pathname === page ? 'active' : undefined}
-              >
-                {label}
+              <Link href={page} passHref>
+                <a className={pathname === page ? 'active' : undefined}>
+                  {label}
+                </a>
               </Link>
             ) : (
               <ExtLink href={link}>{label}</ExtLink>

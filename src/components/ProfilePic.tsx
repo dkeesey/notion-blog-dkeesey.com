@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import profilePic from '../../public/dk.jpg'
 import styles from './ProfilePic.module.css'
 
