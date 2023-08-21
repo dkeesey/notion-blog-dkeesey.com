@@ -1,4 +1,4 @@
-const Scroll = (props) => (
+const Scroll = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
     width="24"

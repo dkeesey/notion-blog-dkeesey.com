@@ -1,7 +1,13 @@
 import { renderToString, ParseError } from 'katex'
+import React from 'react'
+
+type EquationProps = {
+  children: React.ReactNode
+  displayMode?: boolean
+}
 
 function render(expression: string, displayMode: boolean): string {
-  let result: string
+  let result: string = ''
   try {
     result = renderToString(expression, { displayMode: displayMode })
   } catch (e) {
@@ -15,11 +21,14 @@ function render(expression: string, displayMode: boolean): string {
   return result
 }
 
-const Equation = ({ children, displayMode = true }) => {
+const Equation: React.FC<EquationProps> = ({
+  children,
+  displayMode = true,
+}) => {
   return (
     <span
       dangerouslySetInnerHTML={{
-        __html: render(children, displayMode),
+        __html: render(children as string, displayMode),
       }}
     />
   )

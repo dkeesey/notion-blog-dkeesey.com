@@ -1,4 +1,4 @@
-const Notion = (props) => (
+const Notion = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="-5 0 120 130"
     className="prefix__notionLogo"

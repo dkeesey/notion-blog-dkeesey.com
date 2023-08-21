@@ -1,4 +1,4 @@
-const Jamstack = (props) => (
+const Jamstack = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
     height="24"

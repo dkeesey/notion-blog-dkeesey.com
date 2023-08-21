@@ -1,4 +1,4 @@
-const Edit = (props) => (
+const Edit = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
     stroke="currentColor"

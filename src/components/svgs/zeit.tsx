@@ -1,4 +1,4 @@
-const Zeit = (props) => (
+const Zeit = (props: React.SVGProps<SVGSVGElement>) => (
   <svg width={114} height={100} viewBox="0 0 114 100" {...props}>
     <title>{'Logotype - Black'}</title>
     <defs>

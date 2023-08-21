@@ -1,17 +1,23 @@
+import React from 'react'
 import Prism from 'prismjs'
 import 'prismjs/components/prism-jsx'
 
-const Code = ({ children, language = 'javascript' }) => {
+type CodeProps = {
+  children: React.ReactNode
+  language?: string
+}
+
+const Code: React.FC<CodeProps> = ({ children, language = 'javascript' }) => {
+  const codeString = children as string
+  const prismLanguage =
+    Prism.languages[language.toLowerCase()] || Prism.languages.javascript
+
   return (
     <>
       <pre>
         <code
           dangerouslySetInnerHTML={{
-            __html: Prism.highlight(
-              children,
-              Prism.languages[language.toLowerCase()] ||
-                Prism.languages.javascript
-            ),
+            __html: Prism.highlight(codeString, prismLanguage, language),
           }}
         />
       </pre>

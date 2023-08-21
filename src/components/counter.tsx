@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 
-const Counter = ({ initialValue }) => {
+type CounterProps = {
+  initialValue: number
+}
+
+const Counter: React.FC<CounterProps> = ({ initialValue }) => {
   const [clicks, setClicks] = useState(initialValue)
 
   return (
