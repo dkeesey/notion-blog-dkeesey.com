@@ -30,12 +30,24 @@ export default async function notionApi(
           message: 'Failed to get asset URL',
         })
       }
+      const location = signedUrls.pop()
+      if (location === undefined) {
+        console.error('Failed to get signedUrls', urlsResponse)
+        return handleData(res, {
+          status: 'error',
+          message: 'Failed to get asset URL',
+        })
+      }
 
       res.status(307)
-      res.setHeader('Location', signedUrls.pop())
+      res.setHeader('Location', location)
       res.end()
     }
   } catch (error) {
-    handleError(res, error)
+    if (error instanceof Error) {
+      handleError(res, error)
+    } else {
+      handleError(res, new Error('An unknown error occurred.'))
+    }
   }
 }

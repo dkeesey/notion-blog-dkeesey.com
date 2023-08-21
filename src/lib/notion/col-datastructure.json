@@ -1,0 +1,1063 @@
+{
+  "result": {
+    "type": "reducer",
+    "reducerResults": {
+      "collection_group_results": {
+        "type": "results",
+        "blockIds": [
+          "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "4e4395ca-f830-4bc9-bf81-ff58fa56ec34"
+        ],
+        "hasMore": false
+      },
+      "table:uncategorized:title:count": {
+        "type": "aggregation",
+        "aggregationResult": {
+          "type": "number",
+          "value": 2
+        }
+      }
+    },
+    "sizeHint": 2
+  },
+  "collectionIds": ["202f8464-7849-4356-a391-065b7d19c5fa"],
+  "shouldUseClientMode": false,
+  "isViewSpecificClientMode": false,
+  "recordMap": {
+    "block": {
+      "14a055a4-fa12-4559-847c-6a9650ecc2e4": {
+        "value": {
+          "id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "version": 367,
+          "type": "page",
+          "properties": {
+            "S6_\"": [["fireship-animation-intersection-observer"]],
+            "a`af": [
+              [
+                "‣",
+                [
+                  [
+                    "d",
+                    {
+                      "type": "date",
+                      "start_date": "2023-07-24"
+                    }
+                  ]
+                ]
+              ]
+            ],
+            "ijjk": [["‣", [["u", "ab1f2005-d4d0-4aa3-839f-c4909b4d4289"]]]],
+            "la`A": [["Yes"]],
+            "title": [
+              ["Intersection Observer - simple html animation (fireship)"]
+            ]
+          },
+          "content": [
+            "79763b21-9dfd-4787-b35b-6d47d3525446",
+            "ea98086b-33f7-472d-a054-470e62a3f621",
+            "220bc155-678a-4a5c-bc2d-9a2063cf3f2e",
+            "2babdbd7-0b4a-4753-b0f4-162116ac9daf",
+            "8cb43f5d-7276-4274-b4a1-779ff29d9820",
+            "85333fbc-2796-43db-b964-1ee9b36537d9",
+            "a4d4eb88-f229-429b-94db-a652756346b1",
+            "7a0dd5bb-2e12-402b-ba25-563f6ca83a55",
+            "6951f734-febf-46d1-befe-130fe0885a95",
+            "c0d7802b-66b6-4f4c-a6ca-abf34d88e77e",
+            "16d5864e-b6b8-4558-8973-5f61b561d244",
+            "e707004f-e42b-4221-8765-b8b6cce30b81",
+            "580523b9-f458-4333-b331-bad9c186ccfd",
+            "335412aa-0390-4050-808c-eb4ecb142d62",
+            "b2104212-4ebf-4435-b145-9c0ec0a89cd2",
+            "bab805d8-330c-4f39-95e3-743445d21f4a"
+          ],
+          "created_time": 1690236396673,
+          "last_edited_time": 1691125083365,
+          "parent_id": "202f8464-7849-4356-a391-065b7d19c5fa",
+          "parent_table": "collection",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "4e4395ca-f830-4bc9-bf81-ff58fa56ec34": {
+        "value": {
+          "id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "version": 224,
+          "type": "page",
+          "properties": {
+            "S6_\"": [["migration-to-server-components"]],
+            "a`af": [
+              [
+                "‣",
+                [
+                  [
+                    "d",
+                    {
+                      "type": "date",
+                      "start_date": "2023-07-24"
+                    }
+                  ]
+                ]
+              ]
+            ],
+            "ijjk": [["‣", [["u", "ab1f2005-d4d0-4aa3-839f-c4909b4d4289"]]]],
+            "la`A": [["Yes"]],
+            "title": [["Next JS App router - migration to Server Components"]]
+          },
+          "content": [
+            "e3cbb67f-9e24-4931-a715-9866bf5d3e52",
+            "6543fca4-c6ad-46ba-a034-a278dd5dfbfb",
+            "f61422ba-db9d-441e-85b3-257ae8d712a3",
+            "13629200-51d7-4d7c-8ec9-2966c871e1ce",
+            "01c31a37-4a07-4006-881b-e3d2a16005fd",
+            "c0711703-31e6-4b58-b915-cd55e241f89e",
+            "64be2c1d-ec8f-4731-8f0c-b96c6c5a761a",
+            "e321e767-a221-4c41-be70-ba2a1c6e1563",
+            "60ee1420-bbc6-4128-93a0-f6a246056f5b",
+            "f70ff4d3-2ba7-4c14-bd02-76199ad83695",
+            "131ec8a0-eaa3-4349-89d7-4db57485ea07",
+            "78e2b9d3-d8de-43ff-8db8-2e36b3873b1d",
+            "5d11b886-d739-4280-9cc5-bb60712ad6bc",
+            "7d4c257e-4e57-4341-9c4d-5d6a6df527aa"
+          ],
+          "created_time": 1690238407195,
+          "last_edited_time": 1690239667285,
+          "parent_id": "202f8464-7849-4356-a391-065b7d19c5fa",
+          "parent_table": "collection",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "559f0997-7b82-4d95-9160-6927e567a456": {
+        "value": {
+          "id": "559f0997-7b82-4d95-9160-6927e567a456",
+          "version": 42,
+          "type": "collection_view",
+          "view_ids": ["d85c68c8-321a-48a2-8555-3da768e818f6"],
+          "collection_id": "202f8464-7849-4356-a391-065b7d19c5fa",
+          "format": {
+            "collection_pointer": {
+              "id": "202f8464-7849-4356-a391-065b7d19c5fa",
+              "table": "collection",
+              "spaceId": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+            }
+          },
+          "created_time": 1690236202031,
+          "last_edited_time": 1690563941128,
+          "parent_id": "51866812-361e-4ac5-8045-3e746345ab71",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "51866812-361e-4ac5-8045-3e746345ab71": {
+        "value": {
+          "id": "51866812-361e-4ac5-8045-3e746345ab71",
+          "version": 415,
+          "type": "page",
+          "properties": {
+            "title": [["DeanKeesey.com Blog"]]
+          },
+          "content": [
+            "2e9bbbaa-f01d-4911-b0ee-6b18a609224c",
+            "05a4133e-3288-4306-a127-651076b9e9c9",
+            "01cf06dd-dded-4882-a831-dabefc8ebb4c",
+            "e1ba7c29-517a-499d-ba31-2e30ca6349c5",
+            "a07a7726-f253-4845-9293-49dc6b29fc0d",
+            "5f129d02-02d5-425d-a12b-47810919c454",
+            "9b76207f-5ebe-4711-9890-33b0ca3ff5ea",
+            "4ac6f1b6-a0b1-4c73-9ab7-3d71da9a7267",
+            "a86a6220-6d38-4f54-8cc8-067ae7bcfaee",
+            "26168c72-c860-4776-bb5f-2191ff1dae25",
+            "313cae24-83be-41e2-bdc0-f363be1ba7a5",
+            "f654572e-be6f-43a3-b019-b31dd9fe38ca",
+            "168e9ee5-e651-43cd-8ea6-5bf03d97d7dc",
+            "60c866b7-d9f5-485f-bcd0-0f805c7c7e91",
+            "57697431-9fbc-458e-95b9-89a55b8d9f6d",
+            "15a4bded-3d3f-49b2-bbf1-3e9a5fe08df5",
+            "67d9bdb5-c99a-442a-8a3e-6ac1d6e3e47d",
+            "437c8abc-6b04-4b0b-846a-913b52b649a8",
+            "ce15c597-f3e7-44e6-8060-ae0a6c377a43",
+            "b5097251-d8b1-4ac2-af8b-a2766b8da3d1",
+            "4d90d5e2-2a4c-404e-bfc5-72698552a6c4",
+            "08ca39bd-b9de-4744-8aa0-8a4448c3f14d",
+            "7ff879ae-baec-4e98-ae50-6d887cf1eda2",
+            "27b8a325-c1c8-43e1-bf41-11a189575cc5",
+            "559f0997-7b82-4d95-9160-6927e567a456",
+            "354e0c42-17f3-4c3c-834b-5432374df8a2",
+            "3127d356-3eb9-45fb-9d73-9540af52cdbb",
+            "b9f4e851-38ae-4b73-bf15-21b438ed0fd6",
+            "7a32bb1c-cae2-4557-ad59-b62b233bfaee",
+            "91f8c1bb-8cb3-435b-ab70-c26168276c1b",
+            "a087c014-393e-45f0-95a5-2791bf67bae3",
+            "e1fa2de9-c7f5-4b7a-a089-3f14dff2a15f",
+            "a42ae7a4-c51f-488e-83be-810e9a415f44",
+            "75c375f4-8a88-4f15-8e14-dee194232c1d",
+            "f98b91e4-93fc-4048-b861-98ce370e6326",
+            "57f354c7-520c-4c72-8e60-5f79b06b11bd",
+            "56304a07-1b1c-458e-9448-4e3c5711f290",
+            "1b856e2e-2bb5-4f28-9aac-734477b11c56",
+            "7dab0d45-ecb5-4fba-b480-894daad61deb",
+            "d6fb04ab-6455-484b-a75b-a04bc1b75166",
+            "f317294e-d20b-4830-8e95-9592366cd8d3",
+            "5e7777c8-4e88-41b4-8ccf-2b1621bce569",
+            "b3d6864b-757d-4fad-9400-038b9f521879",
+            "d491a145-f824-494e-9f91-403211ff8395",
+            "0901cf7c-79e9-45bf-bb75-a9e983ac3d5b",
+            "dda186ae-c2c0-40d9-bf90-78b3af996958",
+            "0c68ae12-53ca-4688-9940-6d80f2b7f9f7",
+            "a6147560-d044-4e2d-98ca-038432bb69d7",
+            "3baf5eb7-3198-4d12-aad2-b5477c6c8816",
+            "bb760f91-a3b3-4d5f-8bfd-22c1fb9b16d5",
+            "a1fc27ff-9c85-4956-a904-dfcd9be124b4",
+            "f2e1ae70-df4b-461e-b360-1e51b0f6dafc",
+            "73f31fa5-4384-43dd-b97e-025b569154a9"
+          ],
+          "format": {
+            "page_icon": "🫁",
+            "page_cover_position": 0.5
+          },
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289"
+            }
+          ],
+          "created_time": 1690235455459,
+          "last_edited_time": 1691953197000,
+          "parent_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb",
+          "parent_table": "space",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "79763b21-9dfd-4787-b35b-6d47d3525446": {
+        "value": {
+          "id": "79763b21-9dfd-4787-b35b-6d47d3525446",
+          "version": 94,
+          "type": "text",
+          "properties": {
+            "title": [["Useful YouTube videos and notes on animations"]]
+          },
+          "created_time": 1690238189238,
+          "last_edited_time": 1690238203601,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "ea98086b-33f7-472d-a054-470e62a3f621": {
+        "value": {
+          "id": "ea98086b-33f7-472d-a054-470e62a3f621",
+          "version": 3,
+          "type": "divider",
+          "created_time": 1690238210056,
+          "last_edited_time": 1690238210059,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "220bc155-678a-4a5c-bc2d-9a2063cf3f2e": {
+        "value": {
+          "id": "220bc155-678a-4a5c-bc2d-9a2063cf3f2e",
+          "version": 113,
+          "type": "header",
+          "properties": {
+            "title": [["Useful YouTube videos on animation"]]
+          },
+          "created_time": 1690238269084,
+          "last_edited_time": 1690257254065,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "2babdbd7-0b4a-4753-b0f4-162116ac9daf": {
+        "value": {
+          "id": "2babdbd7-0b4a-4753-b0f4-162116ac9daf",
+          "version": 10,
+          "type": "bookmark",
+          "properties": {
+            "link": [["https://www.youtube.com/watch?v=T33NN_pPeNI"]],
+            "title": [["Subtle, yet Beautiful Scroll Animations"]],
+            "description": [
+              [
+                "Learn how to implement scroll animations with HTML, CSS, and JavaScript. Use the JS IntersectionObserver and CSS transitions to implement a native \"animate on scroll\" effect that works in any browser."
+              ]
+            ]
+          },
+          "format": {
+            "bookmark_icon": "https://www.youtube.com/s/desktop/344b7a23/img/favicon_144x144.png",
+            "bookmark_cover": "https://i.ytimg.com/vi/T33NN_pPeNI/maxresdefault.jpg"
+          },
+          "created_time": 1690238316533,
+          "last_edited_time": 1690238316538,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "8cb43f5d-7276-4274-b4a1-779ff29d9820": {
+        "value": {
+          "id": "8cb43f5d-7276-4274-b4a1-779ff29d9820",
+          "version": 6,
+          "type": "text",
+          "created_time": 1690257275901,
+          "last_edited_time": 1690257284806,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "85333fbc-2796-43db-b964-1ee9b36537d9": {
+        "value": {
+          "id": "85333fbc-2796-43db-b964-1ee9b36537d9",
+          "version": 308,
+          "type": "bulleted_list",
+          "properties": {
+            "title": [
+              [
+                "NOT: Animate on Scroll Library - seems good, but hasn’t been touched in 5 years; adds 4.5kb to your bundle - (pass)"
+              ]
+            ]
+          },
+          "created_time": 1690257402127,
+          "last_edited_time": 1690268646408,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "a4d4eb88-f229-429b-94db-a652756346b1": {
+        "value": {
+          "id": "a4d4eb88-f229-429b-94db-a652756346b1",
+          "version": 673,
+          "type": "bulleted_list",
+          "properties": {
+            "title": [
+              [
+                "NOT: @Scroll-timeline - next gen approach; has NO browser support in 2023; integrates with animation timeline from the web animations API; this allows you to apply CSS animations where the keyframes are based on the position of the scrollbar; again this has NO browser support in 2023. (pass)"
+              ]
+            ]
+          },
+          "created_time": 1690257442490,
+          "last_edited_time": 1690268649973,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "7a0dd5bb-2e12-402b-ba25-563f6ca83a55": {
+        "value": {
+          "id": "7a0dd5bb-2e12-402b-ba25-563f6ca83a55",
+          "version": 377,
+          "type": "bulleted_list",
+          "properties": {
+            "title": [
+              [
+                "USE: Intersection Observer - Has support of all modern browsers - tells you if an element in in the DOM is visible to the end user. "
+              ]
+            ]
+          },
+          "content": [
+            "a2aafcad-612e-4878-b97b-34769b2c0271",
+            "6d2b79f1-8622-4078-91db-da40d2acccaa"
+          ],
+          "created_time": 1690257613723,
+          "last_edited_time": 1691124898074,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "6951f734-febf-46d1-befe-130fe0885a95": {
+        "value": {
+          "id": "6951f734-febf-46d1-befe-130fe0885a95",
+          "version": 86,
+          "type": "bulleted_list",
+          "properties": {
+            "title": [["https://deankeesey.com/intersectionObserverDemoPage"]]
+          },
+          "created_time": 1691124897927,
+          "last_edited_time": 1691125105947,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "c0d7802b-66b6-4f4c-a6ca-abf34d88e77e": {
+        "value": {
+          "id": "c0d7802b-66b6-4f4c-a6ca-abf34d88e77e",
+          "version": 5,
+          "type": "bulleted_list",
+          "created_time": 1691125100241,
+          "last_edited_time": 1691125100243,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "16d5864e-b6b8-4558-8973-5f61b561d244": {
+        "value": {
+          "id": "16d5864e-b6b8-4558-8973-5f61b561d244",
+          "version": 142,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "Example code uses vanilla js, using index.html, app.js, and style.css"
+              ]
+            ]
+          },
+          "created_time": 1690257836121,
+          "last_edited_time": 1690257978457,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "e707004f-e42b-4221-8765-b8b6cce30b81": {
+        "value": {
+          "id": "e707004f-e42b-4221-8765-b8b6cce30b81",
+          "version": 115,
+          "type": "code",
+          "properties": {
+            "title": [
+              [
+                "<!-- index.html -->\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Document</title>\n\n  <link rel=\"stylesheet\" href=\"./style.css\">\n  <script defer src=\"./app.js\"></script>\n</head>\n\n<body>\n\n  <h1>Hi Mom!</h1>\n\n  <section class=\"hidden\">\n    <h1>Hi Mom</h1>\n    <p>this is some section content</p>\n  </section>\n\n  <section class=\"hidden\">\n    <h2>Buy this product! </h1>\n      <p>The things you own end up owning you.\n        It's only after you lose everything that you're free to do anything\n      </p>\n  </section>\n\n  <section class=\"hidden\">\n    <h2>It's really good </h2>\n    <p>The things you own end up owning you.</p>\n  </section>\n\n  <section class=\"hidden\">\n    <h2>It's really good </h2>\n    <div class=\"logos\">\n      <div class=\"logo hidden\">\n        <img src=\"https://placekitten.com/200/200\" alt=\"\">\n      </div>\n      <div class=\"logo hidden\">\n        <img src=\"https://placekitten.com/200/200\" alt=\"\">\n      </div>\n      <div class=\"logo hidden\">\n        <img src=\"https://placekitten.com/200/200\" alt=\"\">\n      </div>\n      <div class=\"logo hidden\">\n        <img src=\"https://placekitten.com/200/200\" alt=\"\">\n      </div>\n    </div>\n  </section>\n\n</body>\n\n</html>"
+              ]
+            ],
+            "caption": [["index.html"]],
+            "language": [["HTML"]]
+          },
+          "format": {
+            "code_wrap": true
+          },
+          "created_time": 1690257978747,
+          "last_edited_time": 1690268550954,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "580523b9-f458-4333-b331-bad9c186ccfd": {
+        "value": {
+          "id": "580523b9-f458-4333-b331-bad9c186ccfd",
+          "version": 5,
+          "type": "text",
+          "created_time": 1690268551251,
+          "last_edited_time": 1690268551254,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "335412aa-0390-4050-808c-eb4ecb142d62": {
+        "value": {
+          "id": "335412aa-0390-4050-808c-eb4ecb142d62",
+          "version": 8,
+          "type": "text",
+          "created_time": 1690257676325,
+          "last_edited_time": 1690267802143,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "b2104212-4ebf-4435-b145-9c0ec0a89cd2": {
+        "value": {
+          "id": "b2104212-4ebf-4435-b145-9c0ec0a89cd2",
+          "version": 33,
+          "type": "code",
+          "properties": {
+            "title": [
+              [
+                "//app.js\n\nconst observer = new IntersectionObserver((entries) => {\n  entries.forEach((entry) => {\n    console.log(entry);\n    if (entry.isIntersecting) {\n      entry.target.classList.add(\"show\");\n    } else {\n      entry.target.classList.remove(\"show\");\n    }\n  });\n});\n\nconst hiddenElements = document.querySelectorAll(\".hidden\");\n\nhiddenElements.forEach((el) => observer.observe(el));"
+              ]
+            ],
+            "caption": [["app.js"]],
+            "language": [["JavaScript"]]
+          },
+          "format": {
+            "code_wrap": true
+          },
+          "created_time": 1690267768476,
+          "last_edited_time": 1690267797321,
+          "parent_id": "14a055a4-fa12-4559-847c-6a9650ecc2e4",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "e3cbb67f-9e24-4931-a715-9866bf5d3e52": {
+        "value": {
+          "id": "e3cbb67f-9e24-4931-a715-9866bf5d3e52",
+          "version": 6,
+          "type": "text",
+          "properties": {
+            "title": [["Next JS App router - migration to Server Components"]]
+          },
+          "created_time": 1690238475332,
+          "last_edited_time": 1690238486066,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "6543fca4-c6ad-46ba-a034-a278dd5dfbfb": {
+        "value": {
+          "id": "6543fca4-c6ad-46ba-a034-a278dd5dfbfb",
+          "version": 3,
+          "type": "divider",
+          "created_time": 1690238489701,
+          "last_edited_time": 1690238489704,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "f61422ba-db9d-441e-85b3-257ae8d712a3": {
+        "value": {
+          "id": "f61422ba-db9d-441e-85b3-257ae8d712a3",
+          "version": 17,
+          "type": "text",
+          "created_time": 1690238489717,
+          "last_edited_time": 1690238944519,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "13629200-51d7-4d7c-8ec9-2966c871e1ce": {
+        "value": {
+          "id": "13629200-51d7-4d7c-8ec9-2966c871e1ce",
+          "version": 21,
+          "type": "text",
+          "created_time": 1690238489717,
+          "last_edited_time": 1690238950510,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "01c31a37-4a07-4006-881b-e3d2a16005fd": {
+        "value": {
+          "id": "01c31a37-4a07-4006-881b-e3d2a16005fd",
+          "version": 4,
+          "type": "text",
+          "created_time": 1690238489717,
+          "last_edited_time": 1690238950510,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "c0711703-31e6-4b58-b915-cd55e241f89e": {
+        "value": {
+          "id": "c0711703-31e6-4b58-b915-cd55e241f89e",
+          "version": 10,
+          "type": "bookmark",
+          "properties": {
+            "link": [
+              [
+                "https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration"
+              ]
+            ],
+            "title": [["Upgrading: App Router Migration"]],
+            "description": [
+              [
+                "Learn how to upgrade your existing Next.js application from the Pages Router to the App Router."
+              ]
+            ]
+          },
+          "format": {
+            "bookmark_icon": "https://nextjs.org/favicon.ico",
+            "bookmark_cover": "https://nextjs.org/api/og?title=Upgrading:%20App%20Router%20Migration"
+          },
+          "created_time": 1690238719777,
+          "last_edited_time": 1690238719783,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "64be2c1d-ec8f-4731-8f0c-b96c6c5a761a": {
+        "value": {
+          "id": "64be2c1d-ec8f-4731-8f0c-b96c6c5a761a",
+          "version": 10,
+          "type": "bookmark",
+          "properties": {
+            "link": [["https://www.youtube.com/watch?v=YQMSietiFm0"]],
+            "title": [["Incrementally adopt the Next.js App Router"]],
+            "description": [
+              [
+                "Learn how to move routes from pages/ to app/ with Next.js. This tutorial includes background on React Server & Client components, new Next.js APIs, and practical strategies for adopting the latest features.\n\n0:00 – Introduction\n0:14 – Static Routes\n1:12 – Server Components\n1:40 – Client Components\n4:15 – Mixing Client & Server Components\n6:22 – next/head and Metadata API\n7:45 – Data fetching and getServerSideProps\n9:28 – async/await in React Server Components\n11:28 – Passing data to Client Components\n13:03 – fetch() and caching\n14:02 – Incremental Static Regeneration\n14:26 – Layouts, _app.js, _document.js\n15:45 – Conclusion\n\n◆ Client components: https://www.youtube.com/watch?v=6jM_0wDOw4g\n◆ Next.js docs: https://nextjs.org/docs/getting-started/react-essentials\n◆ Incremental adoption guide: https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration\n◆ Why do Client Components get SSR'd to HTML? https://github.com/reactwg/server-components/discussions/4\n◆ RSC From Scratch. Part 1: Server Components: https://github.com/reactwg/server-components/discussions/5\n◆ Dynamic metadata: https://nextjs.org/docs/app/api-reference/functions/generate-metadata"
+              ]
+            ]
+          },
+          "format": {
+            "bookmark_icon": "https://www.youtube.com/s/desktop/344b7a23/img/favicon_144x144.png",
+            "bookmark_cover": "https://i.ytimg.com/vi/YQMSietiFm0/maxresdefault.jpg"
+          },
+          "created_time": 1690238822197,
+          "last_edited_time": 1690238822205,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "e321e767-a221-4c41-be70-ba2a1c6e1563": {
+        "value": {
+          "id": "e321e767-a221-4c41-be70-ba2a1c6e1563",
+          "version": 78,
+          "type": "code",
+          "properties": {
+            "title": [
+              [
+                "// ssr.tsx - pages router version\n\nimport type { InferGetServerSidePropsType, GetServerSideProps } from 'next';\n\ntype Repo = {\n\tname: string;\n\tstargazers_count: number;\n}\n\nexport const getServerSideProps: GetServerSideProps<{\n\trepo: Repo;\n}> = async () => {\n\tconst res = await fetch('https://api.github.com/repos/vercel/next.js');\n\tconst repo = await res.json();\n\treturn { props: {repo} };\n};\n\nexport default function Page({\n\trepo,\n}): InferGetServerSidePropsType<typeof getServerSideProps>) {\n\n\treturn(\n\t\t<section>\n\t\t\t<h1 className=\"text-2xl font-semibold\">{repo.name}</h1>\n\t\t\t<p className=\"text-gray-700 mt-4\">{repo.stargazers_count} stars</p>\n\t\t</section>\n\t);\n}\n\t"
+              ]
+            ],
+            "language": [["JavaScript"]]
+          },
+          "created_time": 1690238836689,
+          "last_edited_time": 1690239068366,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "60ee1420-bbc6-4128-93a0-f6a246056f5b": {
+        "value": {
+          "id": "60ee1420-bbc6-4128-93a0-f6a246056f5b",
+          "version": 92,
+          "type": "sub_header",
+          "properties": {
+            "title": [["App Router version"]]
+          },
+          "created_time": 1690238836689,
+          "last_edited_time": 1690238982922,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "f70ff4d3-2ba7-4c14-bd02-76199ad83695": {
+        "value": {
+          "id": "f70ff4d3-2ba7-4c14-bd02-76199ad83695",
+          "version": 14,
+          "type": "code",
+          "properties": {
+            "title": [
+              [
+                "// ssr.tsx  - app router version\n\ntype Repo = {\n\tname: string;\n\tstargazers_count: number;\n}\n\nasync function getServerSideProps(): Promist<Repo> {\n\tconst res = await fetch('https://api.github.com/repos/vercel/next.js');\n\treturn res.json();\n};\n\nexport default function Page(){\n\tconst repo = await getServerSideProps();\n\treturn(\n\t\t<section>\n\t\t\t<h1 className=\"text-2xl font-semibold\">{repo.name}</h1>\n\t\t\t<p className=\"text-gray-700 mt-4\">{repo.stargazers_count} stars</p>\n\t\t</section>\n\t);\n}\n\t"
+              ]
+            ],
+            "language": [["JavaScript"]]
+          },
+          "format": {
+            "code_wrap": true
+          },
+          "created_time": 1690238836690,
+          "last_edited_time": 1690239667997,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "131ec8a0-eaa3-4349-89d7-4db57485ea07": {
+        "value": {
+          "id": "131ec8a0-eaa3-4349-89d7-4db57485ea07",
+          "version": 3,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "The migration of Next JS App Router to Server Components brings some changes to routing practices. With the Server Components approach, routing is more flexible and can be optimized for better performance."
+              ]
+            ]
+          },
+          "created_time": 1690239611853,
+          "last_edited_time": 1690239611857,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "78e2b9d3-d8de-43ff-8db8-2e36b3873b1d": {
+        "value": {
+          "id": "78e2b9d3-d8de-43ff-8db8-2e36b3873b1d",
+          "version": 3,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "Instead of relying on the built-in routing system of Next JS, Server Components allow developers to implement their own routing system. This can be beneficial in scenarios where there is a need for more complex routing logic that cannot be achieved with the built-in system."
+              ]
+            ]
+          },
+          "created_time": 1690239611854,
+          "last_edited_time": 1690239611857,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "5d11b886-d739-4280-9cc5-bb60712ad6bc": {
+        "value": {
+          "id": "5d11b886-d739-4280-9cc5-bb60712ad6bc",
+          "version": 3,
+          "type": "text",
+          "properties": {
+            "title": [
+              ["The use of an "],
+              ["async", [["c"]]],
+              [" function to fetch data from an API and return a "],
+              ["Promise", [["c"]]],
+              [
+                " in the Server Components version also provides more control over the flow of data. This can allow for more efficient data fetching and better performance overall."
+              ]
+            ]
+          },
+          "created_time": 1690239611854,
+          "last_edited_time": 1690239611857,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      },
+      "7d4c257e-4e57-4341-9c4d-5d6a6df527aa": {
+        "value": {
+          "id": "7d4c257e-4e57-4341-9c4d-5d6a6df527aa",
+          "version": 3,
+          "type": "text",
+          "properties": {
+            "title": [
+              [
+                "Overall, the migration to Server Components can bring improvements to routing practices by providing more flexibility and control over the routing system and data flow."
+              ]
+            ]
+          },
+          "created_time": 1690239611854,
+          "last_edited_time": 1690239611857,
+          "parent_id": "4e4395ca-f830-4bc9-bf81-ff58fa56ec34",
+          "parent_table": "block",
+          "alive": true,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      }
+    },
+    "collection": {
+      "202f8464-7849-4356-a391-065b7d19c5fa": {
+        "value": {
+          "id": "202f8464-7849-4356-a391-065b7d19c5fa",
+          "version": 32,
+          "name": [["Last Mover Advantage blog pages"]],
+          "schema": {
+            "S6_\"": {
+              "name": "Slug",
+              "type": "text"
+            },
+            "a`af": {
+              "name": "Date",
+              "type": "date"
+            },
+            "ijjk": {
+              "name": "Authors",
+              "type": "person"
+            },
+            "la`A": {
+              "name": "Published",
+              "type": "checkbox"
+            },
+            "title": {
+              "name": "Page",
+              "type": "title"
+            }
+          },
+          "format": {
+            "collection_page_properties": [
+              {
+                "visible": true,
+                "property": "S6_\""
+              },
+              {
+                "visible": true,
+                "property": "la`A"
+              },
+              {
+                "visible": true,
+                "property": "a`af"
+              },
+              {
+                "visible": true,
+                "property": "ijjk"
+              }
+            ]
+          },
+          "parent_id": "559f0997-7b82-4d95-9160-6927e567a456",
+          "parent_table": "block",
+          "alive": true,
+          "migrated": true,
+          "space_id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb"
+        },
+        "role": "editor"
+      }
+    },
+    "space": {
+      "e05fb573-92da-4f8e-addc-c05b71b1c2eb": {
+        "value": {
+          "id": "e05fb573-92da-4f8e-addc-c05b71b1c2eb",
+          "version": 26,
+          "name": "Dean Keesey's Notion",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289"
+            }
+          ],
+          "icon": "https://lh3.googleusercontent.com/a-/AFdZucojLVbpV8hXRp1677bjW4W2eJPfbgLm_VxAfMW2=s100",
+          "beta_enabled": false,
+          "created_time": 1672615023296,
+          "last_edited_time": 1691172307007,
+          "created_by_table": "notion_user",
+          "created_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "last_edited_by_table": "notion_user",
+          "last_edited_by_id": "ab1f2005-d4d0-4aa3-839f-c4909b4d4289",
+          "plan_type": "personal",
+          "invite_link_enabled": true,
+          "settings": {
+            "grant_awards": [
+              {
+                "id": "ai.grant032023",
+                "feature": "ai",
+                "received_at": 1688848978227
+              }
+            ],
+            "is_teams_enabled": false,
+            "enable_ai_feature": false,
+            "space_survey_data": {
+              "intent": {
+                "value": "personal",
+                "version": 1,
+                "collected_at": 1672615023296,
+                "collected_from": "onboarding"
+              },
+              "use_cases": {
+                "value": [
+                  "docs",
+                  "wikis",
+                  "project",
+                  "goals",
+                  "notes",
+                  "other"
+                ],
+                "version": 3,
+                "collected_at": 1672615020541,
+                "collected_from": "onboarding"
+              }
+            },
+            "better_templates_traffic": false
+          },
+          "subscription_tier": "free"
+        },
+        "role": "editor"
+      }
+    }
+  }
+}["ab1f2005-d4d0-4aa3-839f-c4909b4d4289"][
+  "ab1f2005-d4d0-4aa3-839f-c4909b4d4289"
+]

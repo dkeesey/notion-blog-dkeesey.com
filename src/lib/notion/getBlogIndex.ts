@@ -5,6 +5,21 @@ import { getPostPreview } from './getPostPreview'
 import { readFile, writeFile } from '../fs-helpers'
 import { BLOG_INDEX_ID, BLOG_INDEX_CACHE } from './server-constants'
 
+type Block = {
+  value: {
+    type: string
+  }
+  // Add other properties as needed
+}
+
+type RecordMap = {
+  block: { [key: string]: Block }
+}
+
+type Data = {
+  recordMap: RecordMap
+}
+
 export default async function getBlogIndex(previews = true) {
   let postsTable: any = null
   const useCache = process.env.USE_CACHE === 'true'
@@ -20,13 +35,13 @@ export default async function getBlogIndex(previews = true) {
 
   if (!postsTable) {
     try {
-      const data = await rpc('loadPageChunk', {
+      const data = (await rpc('loadPageChunk', {
         pageId: BLOG_INDEX_ID,
         limit: 100, // TODO: figure out Notion's way of handling pagination
         cursor: { stack: [] },
         chunkNumber: 0,
         verticalColumns: false,
-      })
+      })) as Data
 
       // Parse table with posts
       const tableBlock = values(data.recordMap.block).find(

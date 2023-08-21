@@ -3,11 +3,20 @@ import { values } from './rpc'
 
 const nonPreviewTypes = new Set(['editor', 'page', 'collection_view'])
 
+export interface PageChunkData {
+  cursor: {
+    stack: any[]
+  }
+  recordMap: {
+    block: any
+  }
+}
+
 export async function getPostPreview(pageId: string) {
   let blocks
   let dividerIndex = 0
 
-  const data = await loadPageChunk({ pageId, limit: 10 })
+  const data = (await loadPageChunk({ pageId, limit: 10 })) as PageChunkData
   blocks = values(data.recordMap.block)
 
   for (let i = 0; i < blocks.length; i++) {

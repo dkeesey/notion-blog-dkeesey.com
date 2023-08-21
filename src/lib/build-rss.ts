@@ -8,6 +8,8 @@ import getNotionUsers from './notion/getNotionUsers'
 import { postIsPublished, getBlogLink } from './blog-helpers'
 import { loadEnvConfig } from '@next/env'
 import serverConstants from './notion/server-constants'
+import { ReactElement } from 'react'
+import { any } from 'prop-types'
 
 // must use weird syntax to bypass auto replacing of NODE_ENV
 process.env['NODE' + '_ENV'] = 'production'
@@ -16,11 +18,11 @@ process.env.USE_CACHE = 'true'
 // constants
 const NOW = new Date().toJSON()
 
-function mapToAuthor(author) {
+function mapToAuthor(author: { full_name: string }) {
   return `<author><name>${author.full_name}</name></author>`
 }
 
-function decode(string) {
+function decode(string: string) {
   return string
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -29,7 +31,22 @@ function decode(string) {
     .replace(/'/g, '&apos;')
 }
 
-function mapToEntry(post) {
+interface Post {
+  Slug: string
+  Authors: string[]
+  Page: string
+  Date: string
+  link: string
+  title: string
+  date: string
+  authors: { full_name: string }[]
+  content: any
+  preview: ReactElement[]
+
+  // Add other properties as needed
+}
+
+function mapToEntry(post: Post) {
   return `
     <entry>
       <id>${post.link}</id>
@@ -41,7 +58,7 @@ function mapToEntry(post) {
           ${renderToStaticMarkup(
             post.preview
               ? (post.preview || []).map((block, idx) =>
-                  textBlock(block, false, post.title + idx)
+                  textBlock(post.preview, false, post.title + idx)
                 )
               : post.content
           )}
@@ -54,11 +71,11 @@ function mapToEntry(post) {
     </entry>`
 }
 
-function concat(total, item) {
+function concat(total: string, item: string) {
   return total + item
 }
 
-function createRSS(blogPosts = []) {
+function createRSS(blogPosts: Post[] = []) {
   const postsString = blogPosts.map(mapToEntry).reduce(concat, '')
 
   return `<?xml version="1.0" encoding="utf-8"?>
@@ -99,7 +116,7 @@ async function main() {
   const { users } = await getNotionUsers([...neededAuthors])
 
   blogPosts.forEach((post) => {
-    post.authors = post.authors.map((id) => users[id])
+    post.authors = post.authors.map((id: string) => users[id])
     post.link = getBlogLink(post.Slug)
     post.title = post.Page
     post.date = post.Date
