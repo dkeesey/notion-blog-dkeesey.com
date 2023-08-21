@@ -31,6 +31,7 @@ type RenderPostProps = {
     content: any[] // Update with appropriate type
     hasTweet: boolean
     // Add other properties as needed
+    Slug: string
   }
   redirect: string | null
   preview: boolean
