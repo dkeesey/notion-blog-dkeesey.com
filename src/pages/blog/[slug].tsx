@@ -181,7 +181,11 @@ const RenderPost = ({ post, redirect, preview }) => {
             listMap[id] = {
               key: id,
               nested: [],
-              children: textBlock(properties.title, true, id),
+              // children: textBlock(properties.title, true, id),
+              children:
+                properties && properties.title
+                  ? textBlock(properties.title, true, id)
+                  : null,
             }
 
             if (listMap[parent_id]) {
