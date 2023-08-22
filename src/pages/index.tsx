@@ -29,11 +29,14 @@ export default function Index() {
             that enhance customer experience across all touchpoints.
           </p>
           <p>
-            In my diverse career, I've founded and developed the Masumi Hayashi
-            Foundation, worked on large-scale client websites at Agency.com, and
-            delivered complex licensing contracts at Oracle Corporation. I've
-            also designed 3D motion graphics for ESPN's international coverage
-            and resolved critical defects in e-commerce applications.
+            In my diverse career, I've founded and developed the{' '}
+            <Link href="https://www.masumihayashifoundation.org">
+              Masumi Hayashi Foundation
+            </Link>
+            , worked on large-scale client websites at Agency.com, and delivered
+            complex licensing contracts at Oracle Corporation. I've also
+            designed 3D motion graphics for ESPN's international coverage and
+            resolved critical defects in e-commerce applications.
           </p>
 
           <p>
