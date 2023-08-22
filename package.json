@@ -15,14 +15,17 @@
   "dependencies": {
     "@zeit/react-jsx-parser": "2.0.0",
     "async-sema": "3.1.0",
+    "autoprefixer": "^9",
     "github-slugger": "1.2.1",
     "katex": "^0.16.8",
     "next": "^13.4.19",
     "node-fetch": "^3.3.2",
+    "postcss": "^7",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.5",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "uuid": "8.1.0"
   },
   "devDependencies": {
