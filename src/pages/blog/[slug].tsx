@@ -14,14 +14,6 @@ import getNotionUsers from '../../lib/notion/getNotionUsers'
 import { getBlogLink, getDateStr } from '../../lib/blog-helpers'
 import { GetStaticPropsContext } from 'next'
 
-type Post = {
-  Page: string
-  Authors: string[]
-  Date: string
-  Slug: string // Add Slug property to the type
-  content: any[]
-  hasTweet: boolean
-}
 interface BookmarkFormat {
   bookmark_icon: string
   bookmark_cover: string
@@ -40,6 +32,16 @@ type RenderPostProps = {
   }
   redirect: string | null
   preview: boolean
+}
+
+type Block = {
+  value: {
+    type: string // You can replace this with a specific string literal type if you know the possible values
+    properties: any // Define the exact shape if possible
+    id: string
+    parent_id: string
+    [key: string]: any // Additional properties if needed
+  }
 }
 
 // Get the data for each blog post
@@ -201,7 +203,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
           <p>This post has no content</p>
         )}
 
-        {(post.content || []).map((block, blockIdx) => {
+        {(post.content || []).map((block: Block, blockIdx: number) => {
           const { value } = block
           const { type, properties, id, parent_id } = value
           const isLast = blockIdx === post.content.length - 1
@@ -265,9 +267,8 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
             listTagName = null
           }
 
-          const renderHeading = (
-            Type: React.ComponentType<{ children: React.ReactNode }>
-          ) => {
+          const renderHeading = (tag: string) => {
+            const Type = tag as keyof JSX.IntrinsicElements
             toRender.push(
               <Heading key={id}>
                 <Type key={id}>{textBlock(properties.title, true, id)}</Type>

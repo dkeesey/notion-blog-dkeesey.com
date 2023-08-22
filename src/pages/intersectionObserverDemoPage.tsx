@@ -1,6 +1,6 @@
 // pages/intersectionObserverDemoPage.tsx
 import React from 'react'
-import IntersectionObserverDemoComponent from '../components/IntersectionObserverDemoComponent'
+import IntersectionObserverDemoComponent from '../components/intersectionObserverDemoComponent'
 
 const IntersectionObserverDemoPage = () => {
   return (

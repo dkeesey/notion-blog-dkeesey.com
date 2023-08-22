@@ -3,6 +3,7 @@ import Header from '../../components/header'
 import ProfilePic from '../../components/ProfilePic'
 import blogStyles from '../../styles/blog.module.css'
 import sharedStyles from '../../styles/shared.module.css'
+import { GetStaticPropsContext } from 'next'
 
 import {
   getBlogLink,
@@ -13,7 +14,8 @@ import { textBlock } from '../../lib/notion/renderers'
 import getNotionUsers from '../../lib/notion/getNotionUsers'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
 
-export async function getStaticProps({ preview }) {
+export async function getStaticProps(context: GetStaticPropsContext) {
+  const preview = context.preview || false
   const postsTable = await getBlogIndex()
 
   const authorsToGet: Set<string> = new Set()
@@ -37,7 +39,7 @@ export async function getStaticProps({ preview }) {
   const { users } = await getNotionUsers([...authorsToGet])
 
   posts.map((post) => {
-    post.Authors = post.Authors.map((id) => users[id].full_name)
+    post.Authors = post.Authors.map((id: string) => users[id].full_name)
   })
 
   return {
@@ -49,7 +51,13 @@ export async function getStaticProps({ preview }) {
   }
 }
 
-const Index = ({ posts = [], preview }) => {
+const Index = ({
+  posts = [],
+  preview,
+}: {
+  posts?: any[]
+  preview?: boolean
+}) => {
   return (
     <>
       <Header titlePre="Blog" />
@@ -92,8 +100,10 @@ const Index = ({ posts = [], preview }) => {
               <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
-                {(post.preview || []).map((block, idx) =>
-                  textBlock(block, true, `${post.Slug}${idx}`)
+                {(
+                  post.preview || []
+                ).map((block: React.ReactElement, idx: number) =>
+                  textBlock([block], true, `${post.Slug}${idx}`)
                 )}
               </p>
             </div>
