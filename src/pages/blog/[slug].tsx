@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 import { useRouter } from 'next/router'
 import Header from '../../components/header'
 import Heading from '../../components/heading'
-import components from '../../components/dynamic'
 import Code from '../../components/code'
 import JsxParser from 'react-jsx-parser'
 import blogStyles from '../../styles/blog.module.css'
@@ -131,7 +130,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
 
   const components: Record<
     string,
-    React.ComponentType<{}> | React.ExoticComponent<{}>
+    React.ComponentType<any> | React.ExoticComponent<any>
   > = {
     ol: (props: React.HTMLAttributes<HTMLOListElement>) => <ol {...props} />,
     ul: (props: React.HTMLAttributes<HTMLUListElement>) => <ul {...props} />,
