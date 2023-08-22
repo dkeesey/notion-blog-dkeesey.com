@@ -4,7 +4,8 @@ import { useRouter } from 'next/router'
 import Header from '../../components/header'
 import Heading from '../../components/heading'
 import components from '../../components/dynamic'
-import ReactJSXParser from '@zeit/react-jsx-parser'
+import Code from '../../components/code'
+import JsxParser from 'react-jsx-parser'
 import blogStyles from '../../styles/blog.module.css'
 import { textBlock } from '../../lib/notion/renderers'
 import getPageData from '../../lib/notion/getPageData'
@@ -42,6 +43,12 @@ type Block = {
     parent_id: string
     [key: string]: any // Additional properties if needed
   }
+}
+
+type CodeProps = {
+  children: React.ReactNode
+  key: string
+  language: string
 }
 
 // Get the data for each blog post
@@ -121,6 +128,21 @@ const listTypes = new Set(['bulleted_list', 'numbered_list'])
 
 const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
   const router = useRouter()
+
+  const components: Record<
+    string,
+    React.ComponentType<{}> | React.ExoticComponent<{}>
+  > = {
+    ol: (props: React.HTMLAttributes<HTMLOListElement>) => <ol {...props} />,
+    ul: (props: React.HTMLAttributes<HTMLUListElement>) => <ul {...props} />,
+    li: (props: React.HTMLAttributes<HTMLLIElement>) => <li {...props} />,
+    p: (props: React.HTMLAttributes<HTMLElement>) => <p {...props} />,
+    blockquote: (props: React.HTMLAttributes<HTMLElement>) => (
+      <blockquote {...props} />
+    ),
+    // ...rest of your components
+    Code: Code,
+  }
 
   let listTagName: string | null = null
   let listLastId: string | null = null
@@ -211,7 +233,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
           let toRender = []
 
           if (isList) {
-            listTagName = components[type === 'bulleted_list' ? 'ul' : 'ol']
+            listTagName = type === 'bulleted_list' ? 'ul' : 'ol'
             listLastId = `list${id}`
 
             listMap[id] = {
@@ -458,10 +480,14 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
                 if (language === 'LiveScript') {
                   // this requires the DOM for now
                   toRender.push(
-                    <ReactJSXParser
-                      key={id}
+                    <JsxParser
                       jsx={content}
-                      components={components}
+                      components={
+                        components as Record<
+                          string,
+                          React.ComponentType<any> | React.ExoticComponent<any>
+                        >
+                      }
                       componentsOnly={false}
                       renderInpost={false}
                       allowUnknownElements={true}

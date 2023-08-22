@@ -13,7 +13,6 @@
   },
   "pre-commit": "lint-staged",
   "dependencies": {
-    "@zeit/react-jsx-parser": "2.0.0",
     "async-sema": "3.1.0",
     "autoprefixer": "^9",
     "github-slugger": "1.2.1",
@@ -24,6 +23,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-jsx-parser": "^1.29.0",
     "sharp": "^0.32.5",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "uuid": "8.1.0"
@@ -40,5 +40,8 @@
     "prettier": "2.2.1",
     "shell-quote": "^1.8.1",
     "typescript": "^5.1.6"
+  },
+  "resolutions": {
+    "react": "^18.2.0"
   }
 }
