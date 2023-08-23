@@ -1,12 +1,14 @@
-// pages/intersectionObserverDemoPage.tsx
 import React from 'react'
 import IntersectionObserverDemoComponent from '../components/intersectionObserverDemoComponent'
+import 'tailwindcss/tailwind.css' // Import the Tailwind CSS styles
 
 const IntersectionObserverDemoPage = () => {
   return (
-    <div>
-      <h1>Intersection Observer Demo Page</h1>
-      <IntersectionObserverDemoComponent />
+    <div className="flex justify-center items-center h-screen">
+      <div className="text-center">
+        <h1 className="text-2xl">Intersection Observer Demo Page</h1>
+        <IntersectionObserverDemoComponent />
+      </div>
     </div>
   )
 }

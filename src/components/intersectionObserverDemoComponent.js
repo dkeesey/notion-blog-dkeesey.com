@@ -1,5 +1,6 @@
 // components/IntersectionObserverDemoComponent.js
 import React, { useEffect } from 'react'
+import 'tailwindcss/tailwind.css' // Import the Tailwind CSS styles
 
 const IntersectionObserverDemoComponent = () => {
   useEffect(() => {
@@ -23,7 +24,9 @@ const IntersectionObserverDemoComponent = () => {
   }, [])
 
   return (
-    <iframe src="intersectionObserver/index.html" width="1200" height="800" />
+    <div className="flex justify-center items-center h-full">
+      <iframe src="intersectionObserver/index.html" width="1200" height="800" />
+    </div>
   )
 }
 
