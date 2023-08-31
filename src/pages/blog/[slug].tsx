@@ -92,8 +92,10 @@ export async function getStaticProps({
   }
 
   const { users } = await getNotionUsers(post.Authors || [])
-  post.Authors = Object.keys(users).map((id) => users[id].full_name)
-  console.log(post.Authors)
+  // console.dir({ postAuthors: post.Authors, users: users })
+  post.Authors = Object.keys(users).map(
+    (id) => users[id].full_name || 'Dean A Keesey'
+  )
 
   return {
     props: {
@@ -190,8 +192,7 @@ const RenderPost: React.FC<RenderPostProps> = ({ post, redirect, preview }) => {
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
         {post.Authors.length > 0 && (
-          // <div className="authors">By: {post.Authors.join(' ')}</div>
-          <div className="authors">By: {post.Authors.join(' ')}</div>
+          <div className="authors">By: {post.Authors.join('')}</div>
         )}
         {post.Date && (
           <div className="posted">Posted: {getDateStr(post.Date)}</div>
