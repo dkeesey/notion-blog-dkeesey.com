@@ -77,13 +77,14 @@
   margin-bottom: 0;
 }
 
-.post h1 {
+/* .post h1 {
   margin-top: 0;
-}
-
+} */
+.post :global(h1),
 .post :global(h2),
 .post :global(h3) {
   margin: 3rem 0 1.5rem 0;
+  font-weight: 400;
 }
 
 .post :global(video),
