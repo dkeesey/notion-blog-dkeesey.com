@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import profilePic from '../../public/dk.jpg'
 import styles from './ProfilePic.module.css'
 
@@ -11,6 +11,7 @@ const ProfilePic = () => {
         alt="Picture of Dean A. Keesey, UI Engineer"
         width={300}
         height={300}
+        priority
       />
     </div>
   )
