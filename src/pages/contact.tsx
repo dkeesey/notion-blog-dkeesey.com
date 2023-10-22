@@ -62,7 +62,7 @@ export default function Contact() {
   return (
     <div>
       <Head>
-        <title>Contact – Dean A. Keesey</title>
+        <title>Dean A. Keesey - Contact Form</title>
         <script
           id="hs-script-loader"
           async
